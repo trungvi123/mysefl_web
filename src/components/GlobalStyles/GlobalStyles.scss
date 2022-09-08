@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Gumela;
+    font-weight: normal;
+}
+
+:root {
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: #788097;
+    --blueCard: #ddf8fe;
+    --purple: rgb(238 210 255);
+    --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App {
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);
+}
+
+body {
+    overflow-y: overlay;
+}
+
+
+@font-face {
+    font-family: Gumela;
+    src: url('../../assets/fonts/Gumela\ Regular.otf');
+}
+
+button,
+input,
+textarea,
+[tabindex] {
+    outline: none;
+    border: none;
+    // background-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.cus-button {
+    border-radius: 34px;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+
+    &:hover {
+        cursor: pointer;
+        background: white;
+        color: var(--orange);
+        border: 1px solid var(--orange);
+    }
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+}
+
+.cus-span {
+    color: var(--orange);
+}
+
+
+// custom swiper
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--orange);
+    opacity: 1;
+    
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid white;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+// custom scrollbar
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+    
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+    
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}

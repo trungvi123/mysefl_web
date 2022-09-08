@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    align-items: center;
+    padding-right: 28px;
+    height: 5.5rem;
+   
+    & > img {
+        transform: scale(0.4) !important;
+    }
+
+    & > span {
+       font-size: 26px;
+       text-align: left;
+    }
+}

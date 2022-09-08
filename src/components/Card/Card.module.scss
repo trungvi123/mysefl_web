@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    width: 15rem;
+    height: 19rem;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--orangeCard);
+    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    gap: 1rem;
+    padding: 10px;
+
+    & > img {
+        transform: scale(0.6);
+        margin-bottom: -2rem;
+    }
+
+    & > .detail-card {
+        color: var(--gray);
+        font-size: 1rem;
+    }
+
+    & > .more-btn {
+        height: 2rem;
+    }
+
+}

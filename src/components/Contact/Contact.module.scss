@@ -1,0 +1,55 @@
+.wrapper {
+    height: 80vh;
+    padding: 0 3rem;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.left-content {
+    flex: 1;
+    position: relative;
+}
+
+.awesome {
+    display: flex;
+    flex-direction: column;
+    
+    & :nth-child(1) {
+        color: var(--black);
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    & :nth-child(2) {
+        color: var(--orange);
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+}
+
+.right-content {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+
+    & > form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    & .contact-input {
+        width: 20rem;
+        height: 2rem;
+        padding: 0.3em;
+        border: 2px solid var(--orange) ;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    & textarea {
+        height: 6rem !important;
+    }
+}

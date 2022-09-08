@@ -1,0 +1,88 @@
+.wrapper {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    & :nth-child(1) {
+        color: var(--black);
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    & :nth-child(2) {
+        font-size: 3rem;
+        font-weight: bold;
+        color: var(--orange);
+    }
+
+    & :nth-child(3) {
+        font-size: 14px;
+        font-weight: 100;
+        color: var(--gray);
+        margin-top: 10px;
+    }
+}
+
+.hire-btn {
+    height: 2rem;
+    width: 6rem;
+    margin-top: 1rem;
+}
+
+.icons-box {
+    margin-top: 3rem;
+
+    & img {
+        transform: scale(0.5);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.right-content {
+    flex: 1;
+    position: relative;
+
+    & > * {
+        position: absolute;
+        z-index: 1;
+    }
+
+    & :nth-child(1){
+        transform: scale(0.69);
+        left: -15%;
+        top: -9%;
+    }
+
+    & :nth-child(2){
+        transform: scale(0.67);
+        left: -3rem;
+        top: -4.6rem;
+    }
+
+    & :nth-child(3){
+        left: 28%;
+    }
+
+    & :nth-child(4){
+        transform: scale(0.6);
+        left: -24%;
+        top: -19%;
+    }
+}
+
+
+

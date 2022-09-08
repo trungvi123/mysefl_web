@@ -1,0 +1,62 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center ;
+    padding: 0 3rem;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.head-content {
+    align-self: start;
+
+    & > * {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    & :nth-child(2) {
+        color: var(--orange);
+        margin: 0 8px;
+    }
+}
+
+.slide-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    width: 40rem;
+    height: 18rem;
+    background: rgba(255,255,255,0.26);
+    border: 7px solid var(--blueCard);
+    border-radius: 20px;
+    box-shadow: var(boxShadow);
+
+    & > img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    & > span {
+        color: var(--gray);
+    }
+}
+
+.Testimonial-slider {
+    width: 100%;
+    height: 70%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
